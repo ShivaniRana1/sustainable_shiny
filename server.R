@@ -2,7 +2,7 @@ library(shiny)
 library(shinyjs)
 library(shinydashboard)
 library(shinyWidgets)
-
+con <- dbConnect(RSQLite::SQLite(), "C:/Users/ranas/Downloads/Patient Data/shiny_data")
 # Define server logic
 server <- function(input, output, session) {
   observeEvent(input$signInBtn, {
