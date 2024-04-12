@@ -63,7 +63,7 @@ server <- function(input, output, session) {
         tags$script(
           HTML(
             paste0(
-              "window.location.href = 'http://192.168.1.75:8504';"
+              "window.location.href = 'http://localhost:8501';"
             )
           )
         )
